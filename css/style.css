@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+body {
+  background-image: url(../img/IMG_5712.JPG); 
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  margin: 30px;
+}
+
+header img {
+  height: 80px;
+  width: 100px;
+  animation: ball 1.5s infinite;
+  margin-right: 100px;
+}
+
+@keyframes ball {
+    0% {
+      transform: translateY(0px);
+    }
+    
+    50% {
+      transform: translateY(45px);
+    }
+    
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  a {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 500px;
+  }
+  
+h1 {
+  font-size: 60px;
+  margin-left: 40px;
+}
+.text {
+  margin: 15px 30px 20px 50px;
+  position: relative;
+}
+.saying {
+  text-align: center;
+  margin-top: 70px;
+  margin-left: 250px;
+  font-size: 23px;
+  position: absolute;
+  top: 80px;
+  width: 800px;
+  height: 180px;
+  left: -30px;
+  padding: 10px;
+  background-color: rgba(31, 29, 29, 0.8);
+  background-size: cover;
+  color:#FFF;
+  border-radius:3px;
+  opacity:0;
+}
+.text:hover .saying{
+  animation: popdown 3s forwards;
+}
+
+@keyframes popdown {
+  100% {
+  opacity:1;
+  }
+}
+
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  /* margin-top: 250px; */
+  background-color: rgba(243, 70, 7, 0.8);
+  width: 430px;
+  margin: 300px auto 30px ;
+  border-radius: 20px;
+}
+.karasuno {
+  text-align: center;
+}
+
+.karasuno img {
+  height: 500px;
+  width: 700px;
+}
+
+.a,.s, .n, .f, .i ,.k{
+  height: 420px;
+  width: 320px;
+}
+span{
+  font-size: 35px;
+  background-color: rgba(234, 250, 16, 0.87);
+  width: 180px;
+  text-align: center;
+  border-radius: 3px;
+  margin: 0 auto;
+}
+.yosenn {
+  display: flex;
+  justify-content: center;
+}
+.yosenn img {
+  margin: 20px;
+}
+.yosenn li {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.harukou {
+  display: flex;
+  justify-content: center;
+}
+.harukou img {
+  margin: 20px;
+}
+.harukou li {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+footer {
+  background-color: orange;
+  color: white;
+  font-size: 20px;
+  margin-top: 350px;
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+.photo-show { 
+  height: 600px; 
+  max-width: 100%;
+  position: relative;
+  width: 100%; 
+  margin-left: 400px;
+  margin-top: 200px;
+}
+
+.photo-show img { 
+  animation: show 63s;
+  height: auto;
+  max-width: 100%;
+  opacity: 0;
+  position: absolute; /*画像を全て重ねる*/
+}
+
+/*アニメーション*/
+
+@keyframes show {
+  0% {opacity:0}
+  1% {opacity:1}
+  2% {opacity:1}
+  3% {opacity:0}
+}
+
+
+/*各画像のアニメーションの開始時間をずらす*/
+
+.photo-show img:nth-of-type(1) {
+  animation-delay: 1s;
+}
+
+.photo-show img:nth-of-type(2) {
+  animation-delay: 3s;
+}
+
+.photo-show img:nth-of-type(3) {
+  animation-delay: 5s;
+}
+.photo-show img:nth-of-type(4) {
+  animation-delay: 7s;
+}
+
+.photo-show img:nth-of-type(5) {
+  animation-delay: 9s;
+}
+
+.photo-show img:nth-of-type(6) {
+  animation-delay: 11s;
+}
+
+.photo-show img:nth-of-type(7) {
+  animation-delay: 13s;
+} 
+.photo-show img:nth-of-type(8) {
+  animation-delay: 15s;
+}
+.photo-show img:nth-of-type(9) {
+  animation-delay: 17s;
+}
+.photo-show img:nth-of-type(10) {
+  animation-delay: 19s;
+}
+.photo-show img:nth-of-type(11) {
+  animation-delay: 21s;
+}
+.photo-show img:nth-of-type(12) {
+  animation-delay: 23s;
+}
+.photo-show img:nth-of-type(13) {
+  animation-delay: 25s;
+}
+.photo-show img:nth-of-type(14) {
+  animation-delay: 27s;
+}
+.photo-show img:nth-of-type(15) {
+  animation-delay: 29s;
+}
+.photo-show img:nth-of-type(16) {
+  animation-delay: 31s;
+}
+.photo-show img:nth-of-type(17) {
+  animation-delay: 33s;
+}
+.photo-show img:nth-of-type(18) {
+  animation-delay: 35s;
+}
+.photo-show img:nth-of-type(19) {
+  animation-delay: 37s;
+}
+.photo-show img:nth-of-type(20) {
+  animation-delay: 39s;
+}
+.photo-show img:nth-of-type(21) {
+  animation-delay: 41s;
+}
+.photo-show img:nth-of-type(22) {
+  animation-delay: 43s;
+}
+.photo-show img:nth-of-type(23) {
+  animation-delay: 45s;
+}
+.photo-show img:nth-of-type(24) {
+  animation-delay: 47s;
+}
+.photo-show img:nth-of-type(25) {
+  animation-delay: 49s;
+}
+.photo-show img:nth-of-type(26) {
+  animation-delay: 51s;
+}
+.photo-show img:nth-of-type(27) {
+  animation-delay: 53s;
+}
+.photo-show img:nth-of-type(28) {
+  animation-delay: 55s;
+}
+.photo-show img:nth-of-type(29) {
+  animation-delay: 57s;
+}
+.photo-show img:nth-of-type(30) {
+  animation-delay: 59s;
+}
+
+
+
+/*マウスが画像に重なった際、動きを止めて角を５０px削る*/
+
+.photo-show img {
+  transition: 0.2s;
+  border-radius: 0;
+}
+
+.photo-show:hover img {
+  animation-play-state: paused;
+  border-radius: 50px;
+}
