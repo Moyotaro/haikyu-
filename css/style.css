@@ -2,12 +2,14 @@
 
 body {
   background-image: url(../img/IMG_5712.JPG); 
-  width: 100%;
+  width: 95%;
   background-size: cover;
   background-attachment: fixed;
 }
 
 header {
+  position: relative;
+  width: 100%;
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -19,7 +21,7 @@ header img {
   height: 80px;
   width: 100px;
   animation: ball 1.5s infinite;
-  margin-right: 100px;
+  margin-right: 48%;
 }
 
 @keyframes ball {
@@ -39,7 +41,7 @@ header img {
   a {
     font-size: 30px;
     margin-top: 50px;
-    margin-left: 500px;
+    /* margin-left: 0%; */
   }
   
 h1 {
@@ -48,16 +50,20 @@ h1 {
 }
 .text {
   margin: 15px 30px 20px 50px;
-  position: relative;
+  width: 100%; 
 }
+
 .saying {
   text-align: center;
   margin-top: 70px;
-  margin-left: 250px;
+  /* margin-left: 250px; */
+  display: flex;
+  justify-content: center;
+  
   font-size: 23px;
   position: absolute;
   top: 80px;
-  width: 800px;
+  width: 100%;    
   height: 180px;
   left: -30px;
   padding: 10px;
@@ -120,12 +126,16 @@ span{
   display: flex;
   flex-direction: column;
 }
+
+
 .harukou {
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 .harukou img {
-  margin: 20px;
+  margin: 0 auto;
+  margin-left: 20px;
 }
 .harukou li {
   text-align: center;
@@ -138,20 +148,29 @@ footer {
   background-color: orange;
   color: white;
   font-size: 20px;
-  margin-top: 350px;
+  margin-top: 60%;
   padding: 15px;
   text-align: center;
+  width: 103%;
 }
 
-
+.photo {
+  position: relative;
+  /* align-items: center; */
+  /* justify-content: center; */
+  display: flex;
+}
 
 .photo-show { 
   height: 600px; 
   max-width: 100%;
   position: relative;
   width: 100%; 
-  margin-left: 400px;
+  /* margin-left: 400px; */
   margin-top: 200px;
+  display: flex;
+  justify-content: center;
+
 }
 
 .photo-show img { 
@@ -282,4 +301,93 @@ footer {
 .photo-show:hover img {
   animation-play-state: paused;
   border-radius: 50px;
+}
+
+
+
+@media screen and (max-width: 560px) {
+  body {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 35px;
+    margin: 0 auto;
+  }
+  header img {
+    display: none;
+  }
+  header {
+    justify-content: flex-start;
+    margin-top: 5px;
+    height: 80px;
+    width: 90%;
+  }
+  a {
+    font-size: 15px;
+    margin-right: 5px;
+  }
+
+  h2, span {
+    font-size: 30px;
+  }
+  img {
+    height: 80%;
+    width: 60%;
+
+  }
+  .yosenn {
+    flex-direction: column;
+    align-items: center;
+  }
+  .harukou {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .harukou span {
+    margin: 10px auto;
+  }
+  
+  .saying {
+    width: 100%;
+    height: 60px;
+    font-size: 15px;
+    /* text-align: center; */
+    position: static;
+    margin: 0 auto;
+    margin-top: 15px;
+
+  }
+  .karasuno img {
+    width: 80%;
+    height: 80%;
+  }
+  .text {
+    height: 60%;
+    width: 100%;
+  }
+  .photo {
+    position: relative;
+    width: 100%;
+
+  }
+ 
+  .photo-show {
+    position: static;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 150px;
+  }
+
+  footer {
+    width: 100%;
+    height: 20px;
+  }
+  footer p {
+    font-size: 17px;
+  }
 }
